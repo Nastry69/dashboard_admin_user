@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dashboard-admin-user
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    repo: https://github.com/Nastry69/dashboard_admin_user
+    branch: main
+    rootDir: .
