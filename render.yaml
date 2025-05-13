@@ -1,10 +1,9 @@
 services:
   - type: web
-    name: dashboard-admin-user
-    env: php
+    name: mon-site-php
+    env: docker
     plan: free
-    buildCommand: ""
-    startCommand: ""
-    repo: https://github.com/Nastry69/dashboard_admin_user
     branch: main
-    rootDir: .
+    buildCommand: ""
+    startCommand: apache2ctl -D FOREGROUND
+    dockerfilePath: ./Dockerfile
